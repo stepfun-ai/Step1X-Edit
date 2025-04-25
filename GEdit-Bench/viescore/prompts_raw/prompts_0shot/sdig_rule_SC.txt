@@ -1,0 +1,8 @@
+From scale 0 to 10: 
+A score from 0 to 10 will be given based on the success in following the prompt. 
+(0 indicates that the second image does not follow the prompt at all. 10 indicates the second image follows the prompt perfectly.)
+A second score from 0 to 10 will rate how well the subject in the generated image resemble to the token subject in the first image. 
+(0 indicates that the subject in the second image does not look like the token subject at all. 10 indicates the subject in the second image look exactly alike the token subject.)
+Put the score in a list such that output score = [score1, score2], where 'score1' evaluates the prompt and 'score2' evaluates the resemblance.
+
+Text Prompt: <prompt>

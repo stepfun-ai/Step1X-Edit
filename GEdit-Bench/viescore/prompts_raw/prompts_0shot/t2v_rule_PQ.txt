@@ -1,0 +1,17 @@
+RULES:
+
+The image frames are AI-generated.
+The objective is to evaluate how successfully the image frames has been generated.
+
+From scale 0 to 10: 
+A score from 0 to 10 will be given based on the image frames naturalness. 
+(
+    0 indicates that the scene in the image frames does not look natural at all or give a unnatural feeling such as wrong sense of distance, or wrong shadow, or wrong lighting. 
+    10 indicates that the image frames looks natural.
+)
+A second score from 0 to 10 will rate the image frames artifacts. 
+(
+    0 indicates that the image frames contains a large portion of distortion, or watermark, or scratches, or blurred faces, or unusual body parts, or subjects not harmonized. 
+    10 indicates the image frames has no artifacts.
+)
+Put the score in a list such that output score = [naturalness, artifacts]

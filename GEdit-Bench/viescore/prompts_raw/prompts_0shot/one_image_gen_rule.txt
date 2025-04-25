@@ -1,0 +1,4 @@
+RULES:
+
+The image is an AI-generated image according to the text prompt.
+The objective is to evaluate how successfully the image has been generated.

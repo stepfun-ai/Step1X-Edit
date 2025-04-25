@@ -1,0 +1,4 @@
+RULES of each set of inputs:
+
+One image will be provided; The image is an AI-generated image.
+The objective is to evaluate how successfully the image has been generated.

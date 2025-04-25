@@ -1,0 +1,30 @@
+RULES of each set of inputs:
+
+One image will be provided; The image is an AI-generated image.
+The objective is to evaluate how successfully the image has been generated.
+
+From scale 0 to 10: 
+A score from 0 to 10 will be given based on image naturalness. 
+(
+    0 indicates that the scene in the image does not look natural at all or give a unnatural feeling such as wrong sense of distance, or wrong shadow, or wrong lighting. 
+    10 indicates that the image looks natural.
+)
+A second score from 0 to 10 will rate the image artifacts. 
+(
+    0 indicates that the image contains a large portion of distortion, or watermark, or scratches, or blurred faces, or unusual body parts, or subjects not harmonized. 
+    10 indicates the image has no artifacts.
+)
+Put the score in a list such that output score = [naturalness, artifacts]
+
+
+First lets look at the first set of input (1st image) as an example. 
+Output:
+||V^=^V||
+{
+"score" : [5, 5],
+"reasoning" :  "The image gives an unnatural feeling on hands of the girl. There is also minor distortion on the eyes of the girl."
+}
+||V^=^V||
+
+Now evaluate the second set of input (2nd image).
+

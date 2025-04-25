@@ -1,0 +1,7 @@
+RULES:
+
+Three images will be provided: 
+The first image is a input image to be edited.
+The second image is a token subject image.
+The third image is an AI-edited image from the first image. it should contain a subject that looks alike the subject in second image.
+The objective is to evaluate how successfully the image has been edited.

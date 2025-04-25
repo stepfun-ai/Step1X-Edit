@@ -1,0 +1,4 @@
+RULES:
+
+The images are extracted from a AI-generated video according to the text prompt.
+The objective is to evaluate how successfully the video has been generated.

@@ -1,0 +1,6 @@
+RULES of each set of inputs:
+
+Two images will be provided: 
+This first image is a concatenation of two sub-images, each sub-image contain one token subject.
+The second image being an AI-generated image using the first image as guidance.
+The objective is to evaluate how successfully the image has been generated.

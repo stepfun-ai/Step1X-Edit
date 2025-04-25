@@ -1,0 +1,4 @@
+RULES:
+
+Two images will be provided: The first being a processed image (e.g. Canny edges, openpose, grayscale etc.) and the second being an AI-generated image using the first image as guidance.
+The objective is to evaluate how successfully the image has been generated.

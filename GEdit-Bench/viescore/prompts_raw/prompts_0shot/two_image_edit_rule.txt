@@ -1,0 +1,6 @@
+RULES:
+
+Two images will be provided: The first being the original AI-generated image and the second being an edited version of the first.
+The objective is to evaluate how successfully the editing instruction has been executed in the second image.
+
+Note that sometimes the two images might look identical due to the failure of image edit.

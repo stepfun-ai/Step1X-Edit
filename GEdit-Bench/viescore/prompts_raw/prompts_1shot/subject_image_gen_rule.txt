@@ -1,0 +1,4 @@
+RULES of each set of inputs:
+
+Two images will be provided: The first being a token subject image and the second being an AI-generated image using the first image as guidance.
+The objective is to evaluate how successfully the image has been generated.

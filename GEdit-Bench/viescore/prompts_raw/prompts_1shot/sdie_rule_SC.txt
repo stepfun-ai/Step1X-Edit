@@ -1,0 +1,19 @@
+From scale 0 to 10: 
+A score from 0 to 10 will rate how well the subject in the generated image resemble to the token subject in the second image. 
+(0 indicates that the subject in the third image does not look like the token subject at all. 10 indicates the subject in the third image look exactly alike the token subject.)
+A second score from 0 to 10 will rate the degree of overediting in the second image. 
+(0 indicates that the scene in the edited image is completely different from the first image. 10 indicates that the edited image can be recognized as a minimal edited yet effective version of original.)
+Put the score in a list such that output score = [score1, score2], where 'score1' evaluates the resemblance and 'score2' evaluates the degree of overediting.
+
+First lets look at the first set of input (1st, 2nd and 3rd images) as an example. 
+Subject: <subject>
+Output:
+||V^=^V||
+{
+"score" : [5, 10],
+"reasoning" :  "The monster toy looks partially resemble to the token subject. The edit is minimal."
+}
+||V^=^V||
+
+Now evaluate the second set of input (4th, 5th, and 6th images).
+Subject: <subject>

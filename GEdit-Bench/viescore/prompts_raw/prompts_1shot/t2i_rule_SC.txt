@@ -1,0 +1,18 @@
+From scale 0 to 10: 
+A score from 0 to 10 will be given based on the success in following the prompt. 
+(0 indicates that the AI generated image does not follow the prompt at all. 10 indicates the AI generated image follows the prompt perfectly.)
+
+Put the score in a list such that output score = [score].
+
+First lets look at the first set of input (1st image) as an example. 
+Text Prompt: A pink and a white frisbee are on the ground.
+Output:
+||V^=^V||
+{
+"score" : [5],
+"reasoning" :  "White frisbee not present in the image."
+}
+||V^=^V||
+
+Now evaluate the second set of input (2nd image).
+Text Prompt: <prompt>

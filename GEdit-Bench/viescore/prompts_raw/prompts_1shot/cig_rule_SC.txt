@@ -1,0 +1,20 @@
+
+From scale 0 to 10: 
+A score from 0 to 10 will be given based on the success in following the prompt. 
+(0 indicates that the second image does not follow the prompt at all. 10 indicates the second image follows the prompt perfectly.)
+A second score from 0 to 10 will rate how well the generated image is following the guidance image. 
+(0 indicates that the second image is not following the guidance at all. 10 indicates that second image is following the guidance image.)
+Put the score in a list such that output score = [score1, score2], where 'score1' evaluates the prompt and 'score2' evaluates the guidance.
+
+First lets look at the first set of input (1st and 2nd images) as an example. 
+Text Prompt: the bridge is red, Golden Gate Bridge in San Francisco, USA
+Output:
+||V^=^V||
+{
+"score" : [5, 5],
+"reasoning" :  "The bridge is red. But half of the bridge is gone."
+}
+||V^=^V||
+
+Now evaluate the second set of input (3th, 4th images).
+Text Prompt: <prompt>

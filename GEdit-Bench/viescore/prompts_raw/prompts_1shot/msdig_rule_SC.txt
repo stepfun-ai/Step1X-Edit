@@ -1,0 +1,21 @@
+From scale 0 to 10: 
+A score from 0 to 10 will be given based on the success in following the prompt. 
+(0 indicates that the second image does not follow the prompt at all. 10 indicates the second image follows the prompt perfectly.)
+A second score from 0 to 10 will rate how well the subject in the generated image resemble to the token subject in the first sub-image. 
+(0 indicates that the subject in the second image does not look like the token subject in the first sub-image at all. 10 indicates the subject in the second image look exactly alike the token subject in the first sub-image.)
+A third score from 0 to 10 will rate how well the subject in the generated image resemble to the token subject in the second sub-image. 
+(0 indicates that the subject in the second image does not look like the token subject in the second sub-image at all. 10 indicates the subject in the second image look exactly alike the token subject in the second sub-image.)
+Put the score in a list such that output score = [score1, score2, score3], where 'score1' evaluates the prompt and 'score2' evaluates the resemblance for the first sub-image, and 'score3' evaluates the resemblance for the second sub-image.
+
+First lets look at the first set of input (1st and 2nd images) as an example. 
+Text Prompt: A digital illustration of a cat beside a wooden pot
+Output:
+||V^=^V||
+{
+"score" : [5, 5, 10],
+"reasoning" :  "The cat is not beside the wooden pot. The pot looks partially resemble to the subject pot. The cat looks highly resemble to the subject cat."
+}
+||V^=^V||
+
+Now evaluate the second set of input (3th, 4th images).
+Text Prompt: <prompt>

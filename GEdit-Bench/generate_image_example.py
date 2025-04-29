@@ -1,5 +1,5 @@
 from datasets import Dataset, load_dataset
-import math
+import math, os
 
 # Dataset info structure:
 # - task_type: string - Type of the task
@@ -33,7 +33,7 @@ def calculate_dimensions(target_area, ratio):
 dataset = load_dataset("stepfun-ai/GEdit-Bench")
 save_path = "your_save_dir/modelname/"
 
-for item in dataset:
+for item in dataset['train']:
     task_type = item['task_type']
     key = item['key']
     instruction = item['instruction']
@@ -47,6 +47,8 @@ for item in dataset:
 
     save_path_fullset_source_image = f"{save_path}/fullset/{task_type}/{instruction_language}/{key}_SRCIMG.png"
     save_path_fullset = f"{save_path}/fullset/{task_type}/{instruction_language}/{key}.png"
+    os.makedirs(os.path.dirname(save_path_fullset_source_image), exist_ok=True)
+    os.makedirs(os.path.dirname(save_path_fullset), exist_ok=True)
     
     input_image.save(save_path_fullset_source_image)
     resize_input_image.save(save_path_fullset)

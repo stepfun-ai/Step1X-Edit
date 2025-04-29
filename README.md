@@ -38,6 +38,7 @@ If you develop/use Step1X-Edit in your projects, welcome to let us know.
 ## 📑 Open-source Plan
 - [x] Inference & Checkpoints
 - [x] Online demo (Gradio)
+- [ ] fine-tuning scripts
 - [ ] Diffusers 
 - [ ] Multi-gpus Sequence Parallel inference
 - [x] FP8 Quantified weight

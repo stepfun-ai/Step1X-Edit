@@ -30,19 +30,19 @@
 
 ## 🧩 Community Contributions
 
-If you develop/use Step1X-Edit in your projects, welcome to let us know.
+If you develop/use Step1X-Edit in your projects, welcome to let us know 🎉.
 
 - FP8 model weights: [meimeilook/Step1X-Edit-FP8](https://huggingface.co/meimeilook/Step1X-Edit-FP8) by [meimeilook](https://huggingface.co/meimeilook);  [rkfg/Step1X-Edit-FP8](https://huggingface.co/rkfg/Step1X-Edit-FP8) by [rkfg](https://huggingface.co/rkfg)
-
+- Step1X-Edit ComfyUI Plugin: [quank123wip/ComfyUI-Step1X-Edit](https://github.com/quank123wip/ComfyUI-Step1X-Edit) by [quank123wip](https://github.com/quank123wip)
 
 ## 📑 Open-source Plan
 - [x] Inference & Checkpoints
 - [x] Online demo (Gradio)
-- [ ] fine-tuning scripts
+- [ ] Fine-tuning scripts
 - [ ] Diffusers 
 - [ ] Multi-gpus Sequence Parallel inference
 - [x] FP8 Quantified weight
-- [ ] ComfyUI
+- [x] ComfyUI
 
 
 

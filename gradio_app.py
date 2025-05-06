@@ -4,7 +4,6 @@ import json
 import itertools
 import math
 import os
-import spaces
 import time
 from pathlib import Path
 
@@ -386,7 +385,6 @@ def prepare_infer_func():
 
     return image_edit.generate_image
 
-@spaces.GPU
 def inference(prompt, ref_images, seed, size_level, infer_func=None):
     start_time = time.time()
 

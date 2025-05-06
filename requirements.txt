@@ -5,3 +5,4 @@ transformers==4.49.0
 qwen_vl_utils==0.0.10
 safetensors==0.4.5
 pillow==11.1.0
+gradio==5.29.0

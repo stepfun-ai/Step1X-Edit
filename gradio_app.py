@@ -93,13 +93,12 @@ def load_models(
         )
         dit = Step1XEdit(step1x_params)
 
-    ae = load_state_dict(ae, ae_path)
+    ae = load_state_dict(ae, ae_path, 'cpu')
     dit = load_state_dict(
-        dit, dit_path
+        dit, dit_path, 'cpu'
     )
 
-    dit = dit.to(device=device, dtype=dtype)
-    ae = ae.to(device=device, dtype=torch.float32)
+    ae = ae.to(dtype=torch.float32)
 
     return ae, dit, qwen2vl_encoder
 

@@ -410,11 +410,11 @@ class ImageGenerator:
 
 def prepare_infer_func(args):
     # 本地保存路径
-    model_path = "./model_weights"
+    model_path = args.model_path
 
     image_edit = ImageGenerator(
         ae_path=os.path.join(model_path, 'vae.safetensors'),
-        dit_path=os.path.join(model_path, "step1x-edit-i1258.safetensors"),
+        dit_path=os.path.join(args.model_path, "step1x-edit-i1258-FP8.safetensors" if args.quantized else "step1x-edit-i1258.safetensors"),
         qwen2vl_model_path='Qwen/Qwen2.5-VL-7B-Instruct',
         max_length=640,
         quantized=args.quantized,
@@ -491,6 +491,7 @@ def create_demo(args):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
+    parser.add_argument('--model_path', type=str, required=True, help='Path to the model checkpoint')
     parser.add_argument('--offload', action='store_true', help='Use offload for large models')
     parser.add_argument('--quantized', action='store_true', help='Use fp8 model weights')
     args = parser.parse_args()

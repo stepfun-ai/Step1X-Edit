@@ -460,7 +460,7 @@ def main():
         image.save(
             os.path.join(output_path), lossless=True
         )
-    print(f'average time for {args.output_dir}: ', sum(time_list[1:]) / len(time_list[1:]))
+    print(f'average time for {args.output_dir}: ', sum(time_list) / len(time_list))
 
 
 if __name__ == "__main__":

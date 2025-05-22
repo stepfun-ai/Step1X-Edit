@@ -15,7 +15,7 @@
 
 
 ## 🔥🔥🔥 News!!
-* May 22, 2025: 👋 Step1X-Edit now supports Lora finetuning on a single 24GB GPU now! A hand fixing Lora for anime characters based on this framework is open source.
+* May 22, 2025: 👋 Step1X-Edit now supports Lora finetuning on a single 24GB GPU now! A hand-fixing Lora for anime characters has also been released. [Download Lora](https://huggingface.co/stepfun-ai/Step1X-Edit)
 * Apr 30, 2025: 🎉 Step1X-Edit ComfyUI Plugin is available now, thanks for the community contribution! [quank123wip/ComfyUI-Step1X-Edit](https://github.com/quank123wip/ComfyUI-Step1X-Edit) & [raykindle/ComfyUI_Step1X-Edit](https://github.com/raykindle/ComfyUI_Step1X-Edit).
 * Apr 27, 2025: 🎉 With community support, we update the inference code and model weights of Step1X-Edit-FP8. [meimeilook/Step1X-Edit-FP8](https://huggingface.co/meimeilook/Step1X-Edit-FP8) & [rkfg/Step1X-Edit-FP8](https://huggingface.co/rkfg/Step1X-Edit-FP8).
 * Apr 26, 2025: 🎉 Step1X-Edit is now live — you can try editing images directly in the online demo! [Online Demo](https://huggingface.co/spaces/stepfun-ai/Step1X-Edit)
@@ -37,6 +37,7 @@ If you develop/use Step1X-Edit in your projects, welcome to let us know 🎉.
 
 - FP8 model weights: [meimeilook/Step1X-Edit-FP8](https://huggingface.co/meimeilook/Step1X-Edit-FP8) by [meimeilook](https://huggingface.co/meimeilook);  [rkfg/Step1X-Edit-FP8](https://huggingface.co/rkfg/Step1X-Edit-FP8) by [rkfg](https://huggingface.co/rkfg)
 - Step1X-Edit ComfyUI Plugin: [quank123wip/ComfyUI-Step1X-Edit](https://github.com/quank123wip/ComfyUI-Step1X-Edit) by [quank123wip](https://github.com/quank123wip); [raykindle/ComfyUI_Step1X-Edit](https://github.com/raykindle/ComfyUI_Step1X-Edit) by [raykindle](https://github.com/raykindle)
+- Training scripts: [hobart07/Step1X-Edit_train](https://github.com/hobart07/Step1X-Edit_train) by [hobart07](https://github.com/hobart07)
 
 ## 📑 Open-source Plan
 - [x] Inference & Checkpoints
@@ -110,9 +111,7 @@ This default script runs the inference code on example inputs. The results will 
 
 ### 2.4 Gradio Scripts
 
-Change the `model_path` in `gradio_app.py` to the local path of Step1X-Edit.
-
-Then run
+Change the `model_path` in `gradio_app.py` to the local path of Step1X-Edit. Then run
 
 ```bash
 python gradio_app.py
@@ -124,13 +123,11 @@ Then the gradio demo will run on `localhost:32800`.
 
 ### 3.1 Training scripts
 
-The training scripts `./scripts/finetuning.sh` shows how to run Lora Finetuning. 
+The script `./scripts/finetuning.sh` shows how to fine-tune the Step1X-Edit model. With our default strategy, it is possible to fine-tune Step1X-Edit with 1024 resolution on a single 24GB GPU. Our fine-tuning script is adapted from  [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts).
 
 ```bash
 bash ./scripts/finetuning.sh
 ```
-
-With our default strategy, it is possible to train Step1X-Edit in a single 24GB GPU on common resolutions. We adapt the training scripts in [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts/tree/sd3).
 
 ### 3.2 Inference with Lora
 
@@ -160,7 +157,7 @@ Here is the the GPU memory cost during training with lora rank as 64 and batchsi
 |:------------:|:------------:|:------------:|
 | GPU Memory   |                29.7GB / 31.6GB / 33.8GB  | 19.8GB / 21.3GB / 23.6GB |
 
-Here is an example for our pretrained Lora weights, which is designed for fixing corrupted hands of anime characters.
+Here is an example for our [pretrained Lora weights](https://huggingface.co/stepfun-ai/Step1X-Edit/tree/main/lora), which is designed for fixing corrupted hands of anime characters.
 
 <div align="center">
 <img width="1080" alt="results" src="assets/lora_teaser.png">

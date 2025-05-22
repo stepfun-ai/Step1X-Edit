@@ -419,15 +419,15 @@ class ImageGenerator:
                 show_progress=show_progress,
                 timesteps_truncate=1.0,
             )
-            x = self.unpack(x.float(), height, width)
-            if self.offload:
-                self.ae = self.ae.to(self.device)
-            x = self.ae.decode(x)
-            if self.offload:
-                self.ae = self.ae.cpu()
-                cudagc()
-            x = x.clamp(-1, 1)
-            x = x.mul(0.5).add(0.5)
+        x = self.unpack(x.float(), height, width)
+        if self.offload:
+            self.ae = self.ae.to(self.device)
+        x = self.ae.decode(x)
+        if self.offload:
+            self.ae = self.ae.cpu()
+            cudagc()
+        x = x.clamp(-1, 1)
+        x = x.mul(0.5).add(0.5)
 
         t1 = time.perf_counter()
         print(f"Done in {t1 - t0:.1f}s.")

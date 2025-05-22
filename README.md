@@ -129,6 +129,20 @@ The script `./scripts/finetuning.sh` shows how to fine-tune the Step1X-Edit mode
 bash ./scripts/finetuning.sh
 ```
 
+The custom dataset is organized by `./library/data_configs/step1x_edit.toml`. Here `metadata_file` contains all the training sampels, including the absolute paths of source images, absolute paths of target images and instructions.
+
+The `metadata_file` should be a json file containing a dict as follows:
+
+```
+{
+  <target image path, str>: {
+    'ref_image_path': <source image path, str>
+    'caption': <the editing instruction, str>
+  }, 
+  ...
+}
+```
+
 ### 3.2 Inference with Lora
 
 Simply add `--lora <path to your lora weights>` when using `inference.py`. For example:

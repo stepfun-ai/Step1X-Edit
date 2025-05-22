@@ -104,14 +104,10 @@ def equip_dit_with_lora_sd_scripts(ae, text_encoders, dit, lora, device='cuda'):
     from library import lora_module
     module = lora_module
     lora_model, _ = module.create_network_from_weights(1.0, None, ae, text_encoders, dit, weights_sd, True)
-
-    lora_model.apply_to(text_encoders, dit)
-    info = lora_model.load_state_dict(weights_sd, strict=True)
-    print(f"Loaded LoRA weights from {lora}: {info}")
-    lora_model.eval()
-    lora_model.to(device)
+    lora_model.merge_to(text_encoders, dit, weights_sd)
 
     lora_model.set_multiplier(1.0)
+    return lora_model
 
 class ImageGenerator:
     def __init__(
@@ -144,13 +140,15 @@ class ImageGenerator:
         self.quantized = quantized 
         self.offload = offload
         if lora is not None:
-            equip_dit_with_lora_sd_scripts(
+            self.lora_module = equip_dit_with_lora_sd_scripts(
                 self.ae,
                 [self.llm_encoder],
                 self.dit,
                 lora,
                 device=self.dit.device,
             )
+        else:
+            self.lora_module = None
 
 
     def prepare(self, prompt, img, ref_image, ref_image_raw):
@@ -474,7 +472,6 @@ def main():
     )
 
     time_list = []
-
     for image_name, prompt in image_and_prompts.items():
         image_path = os.path.join(args.input_dir, image_name)
         output_path = os.path.join(args.output_dir, image_name)

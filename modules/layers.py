@@ -26,7 +26,7 @@ import torch.nn.functional as F
 from einops import rearrange
 from liger_kernel.ops.rms_norm import LigerRMSNormFunction
 from torch import Tensor, nn
-
+from torch.utils.checkpoint import checkpoint
 
 try:
     import flash_attn
@@ -39,6 +39,26 @@ except ImportError:
     flash_attn_varlen_func = None
     _flash_attn_forward = None
 
+def to_cuda(x):
+    if isinstance(x, torch.Tensor):
+        return x.cuda()
+    elif isinstance(x, (list, tuple)):
+        return [to_cuda(elem) for elem in x]
+    elif isinstance(x, dict):
+        return {k: to_cuda(v) for k, v in x.items()}
+    else:
+        return x
+
+
+def to_cpu(x):
+    if isinstance(x, torch.Tensor):
+        return x.cpu()
+    elif isinstance(x, (list, tuple)):
+        return [to_cpu(elem) for elem in x]
+    elif isinstance(x, dict):
+        return {k: to_cpu(v) for k, v in x.items()}
+    else:
+        return x
 
 MEMORY_LAYOUT = {
     "flash": (
@@ -345,8 +365,22 @@ class MLPEmbedder(nn.Module):
         self.silu = nn.SiLU()
         self.out_layer = nn.Linear(hidden_dim, hidden_dim, bias=True)
 
-    def forward(self, x: Tensor) -> Tensor:
+        self.gradient_checkpointing = False 
+
+    def enable_gradient_checkpointing(self):
+        self.gradient_checkpointing = True
+
+    def disable_gradient_checkpointing(self):
+        self.gradient_checkpointing = False
+
+    def _forward(self, x: Tensor) -> Tensor:
         return self.out_layer(self.silu(self.in_layer(x)))
+
+    def forward(self, *args, **kwargs):
+        if self.training and self.gradient_checkpointing:
+            return checkpoint(self._forward, *args, use_reentrant=False, **kwargs)
+        else:
+            return self._forward(*args, **kwargs)
 
 
 def rope(pos, dim: int, theta: int):
@@ -523,7 +557,18 @@ class DoubleStreamBlock(nn.Module):
             nn.Linear(mlp_hidden_dim, hidden_size, bias=True),
         )
 
-    def forward(
+        self.gradient_checkpointing = False
+        self.cpu_offload_checkpointing = False
+
+    def enable_gradient_checkpointing(self, cpu_offload: bool = False):
+        self.gradient_checkpointing = True
+        self.cpu_offload_checkpointing = cpu_offload
+
+    def disable_gradient_checkpointing(self):
+        self.gradient_checkpointing = False
+        self.cpu_offload_checkpointing = False
+
+    def _forward(
         self, img: Tensor, txt: Tensor, vec: Tensor, pe: Tensor
     ) -> tuple[Tensor, Tensor]:
         img_mod1, img_mod2 = self.img_mod(vec)
@@ -570,6 +615,28 @@ class DoubleStreamBlock(nn.Module):
         txt = scale_add_residual(txt_mlp, txt_mod2.gate, txt)
         return img, txt
 
+    def forward(
+        self, img: Tensor, txt: Tensor, vec: Tensor, pe: Tensor
+    ) -> tuple[Tensor, Tensor]:
+        if self.training and self.gradient_checkpointing:
+            if not self.cpu_offload_checkpointing:
+                return checkpoint(self._forward, img, txt, vec, pe, use_reentrant=False)
+            # cpu offload checkpointing
+
+            def create_custom_forward(func):
+                def custom_forward(*inputs):
+                    cuda_inputs = to_cuda(inputs)
+                    outputs = func(*cuda_inputs)
+                    return to_cpu(outputs)
+
+                return custom_forward
+
+            return torch.utils.checkpoint.checkpoint(
+                create_custom_forward(self._forward), img, txt, vec, pe, use_reentrant=False
+            )
+
+        else:
+            return self._forward(img, txt, vec, pe)
 
 class SingleStreamBlock(nn.Module):
     """
@@ -604,7 +671,18 @@ class SingleStreamBlock(nn.Module):
         self.mlp_act = nn.GELU(approximate="tanh")
         self.modulation = Modulation(hidden_size, double=False)
 
-    def forward(self, x: Tensor, vec: Tensor, pe: Tensor) -> Tensor:
+        self.gradient_checkpointing = False
+        self.cpu_offload_checkpointing = False
+
+    def enable_gradient_checkpointing(self, cpu_offload: bool = False):
+        self.gradient_checkpointing = True
+        self.cpu_offload_checkpointing = cpu_offload
+
+    def disable_gradient_checkpointing(self):
+        self.gradient_checkpointing = False
+        self.cpu_offload_checkpointing = False
+
+    def _forward(self, x: Tensor, vec: Tensor, pe: Tensor) -> Tensor:
         mod, _ = self.modulation(vec)
         x_mod = (1 + mod.scale) * self.pre_norm(x) + mod.shift
         qkv, mlp = torch.split(
@@ -619,7 +697,27 @@ class SingleStreamBlock(nn.Module):
         # compute activation in mlp stream, cat again and run second linear layer
         output = self.linear2(torch.cat((attn, self.mlp_act(mlp)), 2))
         return scale_add_residual(output, mod.gate, x)
+    
+    def forward(self, x: Tensor, vec: Tensor, pe: Tensor) -> Tensor:
+        if self.training and self.gradient_checkpointing:
+            if not self.cpu_offload_checkpointing:
+                return checkpoint(self._forward, x, vec, pe, use_reentrant=False)
 
+            # cpu offload checkpointing
+
+            def create_custom_forward(func):
+                def custom_forward(*inputs):
+                    cuda_inputs = to_cuda(inputs)
+                    outputs = func(*cuda_inputs)
+                    return to_cpu(outputs)
+
+                return custom_forward
+
+            return torch.utils.checkpoint.checkpoint(
+                create_custom_forward(self._forward), x, vec, pe, use_reentrant=False
+            )
+        else:
+            return self._forward(x, vec, pe)
 
 class LastLayer(nn.Module):
     def __init__(self, hidden_size: int, patch_size: int, out_channels: int):

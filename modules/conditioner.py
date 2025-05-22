@@ -67,8 +67,6 @@ class Qwen25VL_7b_Embedder(torch.nn.Module):
     def __init__(self, model_path, max_length=640, dtype=torch.bfloat16, device="cuda"):
         super(Qwen25VL_7b_Embedder, self).__init__()
         self.max_length = max_length
-        self.dtype = dtype
-        self.device = device
 
         self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
             model_path,
@@ -82,6 +80,14 @@ class Qwen25VL_7b_Embedder(torch.nn.Module):
         )
 
         self.prefix = Qwen25VL_7b_PREFIX
+
+    @property
+    def device(self) -> torch.device:
+        return next(self.parameters()).device
+
+    @property
+    def dtype(self) -> torch.dtype:
+        return next(self.parameters()).dtype
 
     def forward(self, caption, ref_images):
         text_list = caption

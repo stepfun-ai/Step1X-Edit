@@ -15,6 +15,7 @@
 
 
 ## 🔥🔥🔥 News!!
+* May 22, 2025: 👋 Step1X-Edit now supports Lora finetuning on a single 24GB GPU now! A hand fixing Lora for anime characters based on this framework is open source.
 * Apr 30, 2025: 🎉 Step1X-Edit ComfyUI Plugin is available now, thanks for the community contribution! [quank123wip/ComfyUI-Step1X-Edit](https://github.com/quank123wip/ComfyUI-Step1X-Edit) & [raykindle/ComfyUI_Step1X-Edit](https://github.com/raykindle/ComfyUI_Step1X-Edit).
 * Apr 27, 2025: 🎉 With community support, we update the inference code and model weights of Step1X-Edit-FP8. [meimeilook/Step1X-Edit-FP8](https://huggingface.co/meimeilook/Step1X-Edit-FP8) & [rkfg/Step1X-Edit-FP8](https://huggingface.co/rkfg/Step1X-Edit-FP8).
 * Apr 26, 2025: 🎉 Step1X-Edit is now live — you can try editing images directly in the online demo! [Online Demo](https://huggingface.co/spaces/stepfun-ai/Step1X-Edit)
@@ -40,7 +41,7 @@ If you develop/use Step1X-Edit in your projects, welcome to let us know 🎉.
 ## 📑 Open-source Plan
 - [x] Inference & Checkpoints
 - [x] Online demo (Gradio)
-- [ ] Fine-tuning scripts
+- [x] Fine-tuning scripts
 - [ ] Diffusers 
 - [ ] Multi-gpus Sequence Parallel inference
 - [x] FP8 Quantified weight
@@ -69,7 +70,6 @@ The following table shows the requirements for running Step1X-Edit model (batch 
 
 * The model is tested on one H800 GPUs.
 * We recommend to use GPUs with 80GB of memory for better generation quality and efficiency.
-* The Step1X-Edit-FP8 model we tested comes from [meimeilook/Step1X-Edit-FP8](https://huggingface.co/meimeilook/Step1X-Edit-FP8).
 
 
 ### 2.2 Dependencies and Installation
@@ -120,7 +120,53 @@ python gradio_app.py
 
 Then the gradio demo will run on `localhost:32800`.
 
-## 3. Benchmark
+## 3. Finetuning
+
+### 3.1 Training scripts
+
+The training scripts `./scripts/finetuning.sh` shows how to run Lora Finetuning. 
+
+```bash
+bash ./scripts/finetuning.sh
+```
+
+With our default strategy, it is possible to train Step1X-Edit in a single 24GB GPU on common resolutions. We adapt the training scripts in [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts/tree/sd3).
+
+### 3.2 Inference with Lora
+
+Simply add `--lora <path to your lora weights>` when using `inference.py`. For example:
+
+```bash
+python inference.py --input_dir ./examples \
+    --model_path /data/work_dir/step1x-edit/ \
+    --json_path ./examples/prompt_cn.json \
+    --output_dir ./output_cn \
+    --seed 1234 --size_level 1024 \
+    --lora 20250521_001-lora256-alpha128-fix-hand-per-epoch/step1x-edit_test.safetensors
+```
+
+To reproduce the cases below, 
+
+```bash 
+bash scripts/run_examples_fix_hand.sh
+```
+
+
+### 3.3 Performances
+
+Here is the the GPU memory cost during training with lora rank as 64 and batchsize as 1:
+
+|     Precision of DiT    |     bf16 (512 / 786 / 1024)  | fp8 (512 / 786 / 1024) |
+|:------------:|:------------:|:------------:|
+| GPU Memory   |                29.7GB / 31.6GB / 33.8GB  | 19.8GB / 21.3GB / 23.6GB |
+
+Here is an example for our pretrained Lora weights, which is designed for fixing corrupted hands of anime characters.
+
+<div align="center">
+<img width="1080" alt="results" src="assets/lora_teaser.png">
+</div>
+
+## 4. Benchmark
 We release [GEdit-Bench](https://huggingface.co/datasets/stepfun-ai/GEdit-Bench) as a new benchmark, grounded in real-world usages is developed to support more authentic and comprehensive evaluation. This benchmark, which is carefully curated to reflect actual user editing needs and a wide range of editing scenarios, enables more authentic and comprehensive evaluations of image editing models.
 The evaluation process and related code can be found in [GEdit-Bench/EVAL.md](GEdit-Bench/EVAL.md). Part results of the benchmark are shown below:
 <div align="center">
@@ -128,7 +174,7 @@ The evaluation process and related code can be found in [GEdit-Bench/EVAL.md](GE
 </div>
 
 
-## 4. Citation
+## 5. Citation
 ```
 @article{liu2025step1x-edit,
       title={Step1X-Edit: A Practical Framework for General Image Editing}, 
@@ -139,7 +185,7 @@ The evaluation process and related code can be found in [GEdit-Bench/EVAL.md](GE
 ```
 
 ## 5. Acknowledgement
-We would like to express our sincere thanks to the contributors of [SD3](https://huggingface.co/stabilityai/stable-diffusion-3-medium), [FLUX](https://github.com/black-forest-labs/flux), [Qwen](https://github.com/QwenLM/Qwen2.5), [diffusers](https://github.com/huggingface/diffusers) and [HuggingFace](https://huggingface.co) teams, for their open research and exploration.
+We would like to express our sincere thanks to the contributors of [Kohya](https://github.com/kohya-ss/sd-scripts/tree/sd3), [SD3](https://huggingface.co/stabilityai/stable-diffusion-3-medium), [FLUX](https://github.com/black-forest-labs/flux), [Qwen](https://github.com/QwenLM/Qwen2.5), [diffusers](https://github.com/huggingface/diffusers) and [HuggingFace](https://huggingface.co) teams, for their open research and exploration.
 
 
 ## 6. Disclaimer

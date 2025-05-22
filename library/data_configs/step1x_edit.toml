@@ -1,0 +1,14 @@
+[general]
+shuffle_caption = false
+caption_extension = '.txt'
+keep_tokens = 1
+
+# This is a edit dataset
+[[datasets]]
+resolution = [768, 768]
+batch_size = 1
+edit_dataset = true # necessary for editing tasks
+
+  [[datasets.subsets]]
+  image_dir = <path to image_dir>
+  metadata_file = <path to your metadata_file>

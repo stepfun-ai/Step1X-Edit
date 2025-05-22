@@ -456,7 +456,6 @@ class SingleTokenRefiner(torch.nn.Module):
 class Qwen2Connector(torch.nn.Module):
     def __init__(
         self,
-        # biclip_dim=1024,
         in_channels=3584,
         hidden_size=4096,
         heads_num=32,
@@ -476,6 +475,7 @@ class Qwen2Connector(torch.nn.Module):
             self.scale_factor.data += -(1 - 0.09)
 
     def forward(self, x,t,mask):
+        t = t * 1000 # fix the times embedding bug
         mask_float = mask.unsqueeze(-1)  # [b, s1, 1]
         x_mean = (x * mask_float).sum(
                 dim=1

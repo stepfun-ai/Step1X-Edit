@@ -313,6 +313,14 @@ class AutoEncoder(nn.Module):
         self.scale_factor = scale_factor
         self.shift_factor = shift_factor
 
+    @property
+    def device(self) -> torch.device:
+        return next(self.parameters()).device
+
+    @property
+    def dtype(self) -> torch.dtype:
+        return next(self.parameters()).dtype
+
     def encode(self, x: Tensor) -> Tensor:
         z = self.reg(self.encoder(x))
         z = self.scale_factor * (z - self.shift_factor)

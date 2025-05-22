@@ -97,6 +97,21 @@ def load_models(
 
     return ae, dit, qwen2vl_encoder
 
+def equip_dit_with_lora_sd_scripts(ae, text_encoders, dit, lora, device='cuda'):
+    from safetensors.torch import load_file
+    weights_sd = load_file(lora)
+    is_lora = True
+    from library import lora_module
+    module = lora_module
+    lora_model, _ = module.create_network_from_weights(1.0, None, ae, text_encoders, dit, weights_sd, True)
+
+    lora_model.apply_to(text_encoders, dit)
+    info = lora_model.load_state_dict(weights_sd, strict=True)
+    print(f"Loaded LoRA weights from {lora}: {info}")
+    lora_model.eval()
+    lora_model.to(device)
+
+    lora_model.set_multiplier(1.0)
 
 class ImageGenerator:
     def __init__(
@@ -109,6 +124,7 @@ class ImageGenerator:
         dtype=torch.bfloat16,
         quantized=False,
         offload=False,
+        lora=None,
     ) -> None:
         self.device = torch.device(device)
         self.ae, self.dit, self.llm_encoder = load_models(
@@ -120,11 +136,21 @@ class ImageGenerator:
         )
         if not quantized:
             self.dit = self.dit.to(dtype=torch.bfloat16)
+        else:
+            self.dit = self.dit.to(dtype=torch.float8_e4m3fn)
         if not offload:
             self.dit = self.dit.to(device=self.device)
             self.ae = self.ae.to(device=self.device)
         self.quantized = quantized 
         self.offload = offload
+        if lora is not None:
+            equip_dit_with_lora_sd_scripts(
+                self.ae,
+                [self.llm_encoder],
+                self.dit,
+                lora,
+                device=self.dit.device,
+            )
 
 
     def prepare(self, prompt, img, ref_image, ref_image_raw):
@@ -214,17 +240,27 @@ class ImageGenerator:
             t_vec = torch.full(
                 (img.shape[0],), t_curr, dtype=img.dtype, device=img.device
             )
-            txt, vec = self.dit.connector(llm_embedding, t_vec, mask)
-
 
             pred = self.dit(
                 img=img,
                 img_ids=img_ids,
-                txt=txt,
                 txt_ids=txt_ids,
-                y=vec,
                 timesteps=t_vec,
+                llm_embedding=llm_embedding,
+                t_vec=t_vec,
+                mask=mask,
             )
+            # txt, vec = self.dit.connector(llm_embedding, t_vec, mask)
+
+
+            # pred = self.dit(
+            #     img=img,
+            #     img_ids=img_ids,
+            #     txt=txt,
+            #     txt_ids=txt_ids,
+            #     y=vec,
+            #     timesteps=t_vec,
+            # )
 
             if cfg_guidance != -1:
                 cond, uncond = (
@@ -416,6 +452,7 @@ def main():
     parser.add_argument('--size_level', default=512, type=int)
     parser.add_argument('--offload', action='store_true', help='Use offload for large models')
     parser.add_argument('--quantized', action='store_true', help='Use fp8 model weights')
+    parser.add_argument('--lora', type=str, default=None)
     args = parser.parse_args()
 
     assert os.path.exists(args.input_dir), f"Input directory {args.input_dir} does not exist."
@@ -428,11 +465,12 @@ def main():
 
     image_edit = ImageGenerator(
         ae_path=os.path.join(args.model_path, 'vae.safetensors'),
-        dit_path=os.path.join(args.model_path, "step1x-edit-i1258-FP8.safetensors" if args.quantized else "step1x-edit-i1258.safetensors"),
-        qwen2vl_model_path=('Qwen/Qwen2.5-VL-7B-Instruct'),
+        dit_path=os.path.join(args.model_path, "step1x-edit-i1258.safetensors"),
+        qwen2vl_model_path=os.path.join(args.model_path, 'Qwen2.5-VL-7B-Instruct'),
         max_length=640,
         quantized=args.quantized,
         offload=args.offload,
+        lora=args.lora,
     )
 
     time_list = []
@@ -460,6 +498,7 @@ def main():
         image.save(
             os.path.join(output_path), lossless=True
         )
+    print(f'average time for {args.output_dir}: ', sum(time_list[1:]) / len(time_list[1:]))
 
 
 if __name__ == "__main__":

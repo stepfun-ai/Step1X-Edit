@@ -129,6 +129,7 @@ class ImageGenerator:
             qwen2vl_model_path=qwen2vl_model_path,
             max_length=max_length,
             dtype=dtype,
+            device=self.device
         )
         if not quantized:
             self.dit = self.dit.to(dtype=torch.bfloat16)

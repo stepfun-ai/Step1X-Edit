@@ -2,7 +2,7 @@
 torch>=2.3.1
 liger_kernel==0.5.4
 einops==0.8.1
-transformers==4.49.0
+transformers==4.51.3
 qwen_vl_utils==0.0.10
 safetensors==0.4.5
 pillow==11.1.0

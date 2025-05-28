@@ -102,6 +102,17 @@ def load_models(
 
     return ae, dit, qwen2vl_encoder
 
+def equip_dit_with_lora_sd_scripts(ae, text_encoders, dit, lora, device='cuda'):
+    from safetensors.torch import load_file
+    weights_sd = load_file(lora)
+    is_lora = True
+    from library import lora_module
+    module = lora_module
+    lora_model, _ = module.create_network_from_weights(1.0, None, ae, text_encoders, dit, weights_sd, True)
+    lora_model.merge_to(text_encoders, dit, weights_sd)
+
+    lora_model.set_multiplier(1.0)
+    return lora_model
 
 class ImageGenerator:
     def __init__(
@@ -114,6 +125,7 @@ class ImageGenerator:
         dtype=torch.bfloat16,
         quantized=False,
         offload=False,
+        lora=None,
     ) -> None:
         self.device = torch.device(device)
         self.ae, self.dit, self.llm_encoder = load_models(
@@ -122,14 +134,27 @@ class ImageGenerator:
             qwen2vl_model_path=qwen2vl_model_path,
             max_length=max_length,
             dtype=dtype,
+            device=self.device
         )
         if not quantized:
             self.dit = self.dit.to(dtype=torch.bfloat16)
+        else:
+            self.dit = self.dit.to(dtype=torch.float8_e4m3fn)
         if not offload:
             self.dit = self.dit.to(device=self.device)
             self.ae = self.ae.to(device=self.device)
         self.quantized = quantized 
         self.offload = offload
+        if lora is not None:
+            self.lora_module = equip_dit_with_lora_sd_scripts(
+                self.ae,
+                [self.llm_encoder],
+                self.dit,
+                lora,
+                device=self.dit.device,
+            )
+        else:
+            self.lora_module = None
 
 
     def prepare(self, prompt, img, ref_image, ref_image_raw):
@@ -219,17 +244,27 @@ class ImageGenerator:
             t_vec = torch.full(
                 (img.shape[0],), t_curr, dtype=img.dtype, device=img.device
             )
-            txt, vec = self.dit.connector(llm_embedding, t_vec, mask)
-
 
             pred = self.dit(
                 img=img,
                 img_ids=img_ids,
-                txt=txt,
                 txt_ids=txt_ids,
-                y=vec,
                 timesteps=t_vec,
+                llm_embedding=llm_embedding,
+                t_vec=t_vec,
+                mask=mask,
             )
+            # txt, vec = self.dit.connector(llm_embedding, t_vec, mask)
+
+
+            # pred = self.dit(
+            #     img=img,
+            #     img_ids=img_ids,
+            #     txt=txt,
+            #     txt_ids=txt_ids,
+            #     y=vec,
+            #     timesteps=t_vec,
+            # )
 
             if cfg_guidance != -1:
                 cond, uncond = (
@@ -494,6 +529,7 @@ if __name__ == "__main__":
     parser.add_argument('--model_path', type=str, required=True, help='Path to the model checkpoint')
     parser.add_argument('--offload', action='store_true', help='Use offload for large models')
     parser.add_argument('--quantized', action='store_true', help='Use fp8 model weights')
+    parser.add_argument('--lora', type=str, default=None, help='Path to the lora weights')
     args = parser.parse_args()
 
     demo = create_demo(args)

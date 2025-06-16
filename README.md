@@ -176,6 +176,8 @@ Here is an example for our [pretrained Lora weights](https://huggingface.co/step
 <div align="center">
 <img width="1080" alt="results" src="assets/lora_teaser.png">
 </div>
+### 3.3 Multi gpus inference 
+python multi_inference.py 
 
 ## 4. Benchmark
 We release [GEdit-Bench](https://huggingface.co/datasets/stepfun-ai/GEdit-Bench) as a new benchmark, grounded in real-world usages is developed to support more authentic and comprehensive evaluation. This benchmark, which is carefully curated to reflect actual user editing needs and a wide range of editing scenarios, enables more authentic and comprehensive evaluations of image editing models.

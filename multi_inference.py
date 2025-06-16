@@ -24,7 +24,15 @@ def process_subset(process_id, subset_data):
 if __name__ == "__main__":
     set_start_method("spawn", force=True)
     # 读取数据
-    with open('/x2robot/share/caichuang/aug_folder_box_path.json', 'r') as f:
+    '''
+     the json file shuld like this :
+     {
+     {    "input_file":"",
+          "output_file":""  
+        }
+     }
+    '''
+    with open('your_inference_json', 'r') as f:
         data = json.load(f)
 
     # 进程数量

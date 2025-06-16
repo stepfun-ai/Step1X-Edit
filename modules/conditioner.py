@@ -67,12 +67,13 @@ class Qwen25VL_7b_Embedder(torch.nn.Module):
     def __init__(self, model_path, max_length=640, dtype=torch.bfloat16, device="cuda"):
         super(Qwen25VL_7b_Embedder, self).__init__()
         self.max_length = max_length
-
+        self.target_device = device
+        # self.device = torch.device(device)
         self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
             model_path,
             torch_dtype=dtype,
             attn_implementation="flash_attention_2",
-        ).to(torch.cuda.current_device())
+        ).to(self.target_device)
 
         self.model.requires_grad_(False)
         self.processor = AutoProcessor.from_pretrained(
@@ -83,33 +84,36 @@ class Qwen25VL_7b_Embedder(torch.nn.Module):
 
     @property
     def device(self) -> torch.device:
-        return next(self.parameters()).device
+        # return next(self.parameters()).device
+        return self.target_device
 
     @property
     def dtype(self) -> torch.dtype:
         return next(self.parameters()).dtype
 
     def forward(self, caption, ref_images):
+        # import ipdb
+        # ipdb.set_trace()
         text_list = caption
         embs = torch.zeros(
             len(text_list),
             self.max_length,
             self.model.config.hidden_size,
             dtype=torch.bfloat16,
-            device=torch.cuda.current_device(),
+            device=self.target_device,
         )
         hidden_states = torch.zeros(
             len(text_list),
             self.max_length,
             self.model.config.hidden_size,
             dtype=torch.bfloat16,
-            device=torch.cuda.current_device(),
+            device=self.target_device,
         )
         masks = torch.zeros(
             len(text_list),
             self.max_length,
             dtype=torch.long,
-            device=torch.cuda.current_device(),
+            device=self.target_device,
         )
         input_ids_list = []
         attention_mask_list = []
@@ -187,7 +191,7 @@ class Qwen25VL_7b_Embedder(torch.nn.Module):
                 else:
                     token_list.append(token_each)
 
-            new_txt_ids = torch.cat(token_list, dim=1).to("cuda")
+            new_txt_ids = torch.cat(token_list, dim=1).to(self.target_device)
 
             new_txt_ids = new_txt_ids.to(old_inputs_ids.device)
 
@@ -196,14 +200,14 @@ class Qwen25VL_7b_Embedder(torch.nn.Module):
             inputs.input_ids = (
                 torch.cat([old_inputs_ids[0, :idx1], new_txt_ids[0, idx2:]], dim=0)
                 .unsqueeze(0)
-                .to("cuda")
+                .to(self.target_device)
             )
-            inputs.attention_mask = (inputs.input_ids > 0).long().to("cuda")
+            inputs.attention_mask = (inputs.input_ids > 0).long().to(self.target_device)
             outputs = self.model(
                 input_ids=inputs.input_ids,
                 attention_mask=inputs.attention_mask,
-                pixel_values=inputs.pixel_values.to("cuda"),
-                image_grid_thw=inputs.image_grid_thw.to("cuda"),
+                pixel_values=inputs.pixel_values.to(self.target_device),
+                image_grid_thw=inputs.image_grid_thw.to(self.target_device),
                 output_hidden_states=True,
             )
 
@@ -216,7 +220,7 @@ class Qwen25VL_7b_Embedder(torch.nn.Module):
             masks[idx, : min(self.max_length, emb.shape[1] - 217)] = torch.ones(
                 (min(self.max_length, emb.shape[1] - 217)),
                 dtype=torch.long,
-                device=torch.cuda.current_device(),
+                device=self.target_device,
             )
 
         return embs, masks

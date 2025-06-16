@@ -499,8 +499,9 @@ class QKNorm(torch.nn.Module):
         self.key_norm = RMSNorm(dim)
 
     def forward(self, q: Tensor, k: Tensor, v: Tensor) -> tuple[Tensor, Tensor]:
-        q = self.query_norm(q)
-        k = self.key_norm(k)
+        with torch.cuda.device(q.device):
+            q = self.query_norm(q)
+            k = self.key_norm(k)
         return q.to(v), k.to(v)
 
 
@@ -735,3 +736,4 @@ class LastLayer(nn.Module):
         x = (1 + scale[:, None, :]) * self.norm_final(x) + shift[:, None, :]
         x = self.linear(x)
         return x
+

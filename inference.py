@@ -83,14 +83,14 @@ def load_models(
             depth=19,
             depth_single_blocks=38,
             axes_dim=[16, 56, 56],
-            theta=10_000,
+            theta=10_000, 
             qkv_bias=True,
         )
         dit = Step1XEdit(step1x_params)
 
     ae = load_state_dict(ae, ae_path, 'cpu')
     dit = load_state_dict(
-        dit, dit_path, 'cpu'
+        dit, dit_path, 'cpu' 
     )
 
     ae = ae.to(dtype=torch.float32)
@@ -112,9 +112,9 @@ def equip_dit_with_lora_sd_scripts(ae, text_encoders, dit, lora, device='cuda'):
 class ImageGenerator:
     def __init__(
         self,
-        dit_path=None,
-        ae_path=None,
-        qwen2vl_model_path=None,
+        dit_path='path_to_your_dit',
+        ae_path='path_to_you_ae',
+        qwen2vl_model_path='path_to_your_qwen2vl',
         device="cuda",
         max_length=640,
         dtype=torch.bfloat16,
@@ -122,7 +122,10 @@ class ImageGenerator:
         offload=False,
         lora=None,
     ) -> None:
+        
+        
         self.device = torch.device(device)
+
         self.ae, self.dit, self.llm_encoder = load_models(
             dit_path=dit_path,
             ae_path=ae_path,
@@ -131,6 +134,8 @@ class ImageGenerator:
             dtype=dtype,
             device=self.device
         )
+
+        # self.llm_encoder = self.llm_encoder.to(device=self.device)
         if not quantized:
             self.dit = self.dit.to(dtype=torch.bfloat16)
         else:
@@ -185,6 +190,8 @@ class ImageGenerator:
             prompt = [prompt]
         if self.offload:
             self.llm_encoder = self.llm_encoder.to(self.device)
+        # import ipdb
+        # ipdb.set_trace()    
         txt, mask = self.llm_encoder(prompt, ref_image_raw)
         if self.offload:
             self.llm_encoder = self.llm_encoder.cpu()
@@ -198,7 +205,7 @@ class ImageGenerator:
 
         return {
             "img": img,
-            "mask": mask,
+            "mask": mask.to(img.device),
             "img_ids": img_ids.to(img.device),
             "llm_embedding": txt.to(img.device),
             "txt_ids": txt_ids.to(img.device),
@@ -227,6 +234,7 @@ class ImageGenerator:
         show_progress=False,
         timesteps_truncate=1.0,
     ):
+
         if self.offload:
             self.dit = self.dit.to(self.device)
         if show_progress:
@@ -326,19 +334,20 @@ class ImageGenerator:
     
     def input_process_image(self, img, img_size=512):
         # 1. 打开图片
-        w, h = img.size
-        r = w / h 
+        # w, h = img.size
+        # r = w / h 
 
-        if w > h:
-            w_new = math.ceil(math.sqrt(img_size * img_size * r))
-            h_new = math.ceil(w_new / r)
-        else:
-            h_new = math.ceil(math.sqrt(img_size * img_size / r))
-            w_new = math.ceil(h_new * r)
-        h_new = math.ceil(h_new) // 16 * 16
-        w_new = math.ceil(w_new) // 16 * 16
+        # if w > h:
+        #     w_new = math.ceil(math.sqrt(img_size * img_size * r))
+        #     h_new = math.ceil(w_new / r)
+        # else:
+        #     h_new = math.ceil(math.sqrt(img_size * img_size / r))
+        #     w_new = math.ceil(h_new * r)
+        # h_new = math.ceil(h_new) // 16 * 16
+        # w_new = math.ceil(w_new) // 16 * 16
 
-        img_resized = img.resize((w_new, h_new))
+        # img_resized = img.resize((w_new, h_new))
+        img_resized = img
         return img_resized, img.size
 
     @torch.inference_mode()
@@ -438,66 +447,37 @@ class ImageGenerator:
         return images_list
 
 
-def main():
+    def inference(
+        self,
+        prompt,
+        negative_prompt='',
+        num_steps=28,
+        cfg_guidance=6.0,
+        seed=42,
+        num_samples=1,
+        init_image=None,
+        image2image_strength=0.0,
+        show_progress=False,
+        size_level=512,
+        output_path=None,
+        input_path = None
+    ):
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--model_path', type=str, required=True, help='Path to the model checkpoint')
-    parser.add_argument('--input_dir', type=str, required=True, help='Path to the input image directory')
-    parser.add_argument('--output_dir', type=str, required=True, help='Path to the output image directory')
-    parser.add_argument('--json_path', type=str, required=True, help='Path to the JSON file containing image names and prompts')
-    parser.add_argument('--seed', type=int, default=42, help='Random seed for generation')
-    parser.add_argument('--num_steps', type=int, default=28, help='Number of diffusion steps')
-    parser.add_argument('--cfg_guidance', type=float, default=6.0, help='CFG guidance strength')
-    parser.add_argument('--size_level', default=512, type=int)
-    parser.add_argument('--offload', action='store_true', help='Use offload for large models')
-    parser.add_argument('--quantized', action='store_true', help='Use fp8 model weights')
-    parser.add_argument('--lora', type=str, default=None)
-    args = parser.parse_args()
-
-    assert os.path.exists(args.input_dir), f"Input directory {args.input_dir} does not exist."
-    assert os.path.exists(args.json_path), f"JSON file {args.json_path} does not exist."
-
-    args.output_dir = args.output_dir.rstrip('/') + ('-offload' if args.offload else "") + ('-quantized' if args.quantized else "") + f"-{args.size_level}"
-    os.makedirs(args.output_dir, exist_ok=True)
-
-    image_and_prompts = json.load(open(args.json_path, 'r'))
-
-    image_edit = ImageGenerator(
-        ae_path=os.path.join(args.model_path, 'vae.safetensors'),
-        dit_path=os.path.join(args.model_path, "step1x-edit-i1258.safetensors"),
-        qwen2vl_model_path=os.path.join(args.model_path, 'Qwen2.5-VL-7B-Instruct'),
-        max_length=640,
-        quantized=args.quantized,
-        offload=args.offload,
-        lora=args.lora,
-    )
-
-    time_list = []
-    for image_name, prompt in image_and_prompts.items():
-        image_path = os.path.join(args.input_dir, image_name)
-        output_path = os.path.join(args.output_dir, image_name)
-        start_time = time.time()
-
-        image = image_edit.generate_image(
-            prompt,
-            negative_prompt="",
-            ref_images=Image.open(image_path).convert("RGB"),
-            num_samples=1,
-            num_steps=args.num_steps,
-            cfg_guidance=args.cfg_guidance,
-            seed=args.seed,
-            show_progress=True,
-            size_level=args.size_level,
+        img = self.generate_image(
+            prompt=prompt,
+            negative_prompt='',
+            ref_images=Image.open(input_path).convert("RGB"),
+            num_steps=num_steps,
+            cfg_guidance=cfg_guidance,
+            seed=seed,
+            num_samples=num_samples,
+            init_image=init_image,
+            image2image_strength=image2image_strength,
+            show_progress=show_progress,
+            size_level=size_level
         )[0]
-        
-        print(f"Time taken: {time.time() - start_time:.2f} seconds")
-        time_list.append(time.time() - start_time)
 
-        image.save(
-            os.path.join(output_path), lossless=True
-        )
-    print(f'average time for {args.output_dir}: ', sum(time_list[1:]) / len(time_list[1:]))
+        img.save(output_path, lossless=True) if output_path else None
 
 
-if __name__ == "__main__":
-    main()
+

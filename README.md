@@ -5,7 +5,9 @@
   <a href="https://step1x-edit.github.io/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Web&color=green"></a> &ensp;
   <a href="https://arxiv.org/abs/2504.17761"><img src="https://img.shields.io/static/v1?label=Step1X-Edit&message=Arxiv&color=red"></a> &ensp;
   <a href="https://arxiv.org/abs/2511.22625"><img src="https://img.shields.io/static/v1?label=ReasonEdit&message=Arxiv&color=red"></a> &ensp;
-  <a href="assets/WeChat.jpg"><img src="https://img.shields.io/static/v1?label=WeChat(微信)&message=%F0%9F%92%AC&color=green"></a> &ensp;
+  <a href="assets/WeChat.jpg">
+  <img src="https://img.shields.io/static/v1?label=WeChat&message=Add%20Me&color=green&logo=wechat&logoColor=white">
+  </a>
   
   <a href="https://huggingface.co/stepfun-ai/Step1X-Edit"><img src="https://img.shields.io/static/v1?label=Model&message=HuggingFace&color=yellow"></a> &ensp;
   <a href="https://huggingface.co/datasets/stepfun-ai/GEdit-Bench"><img src="https://img.shields.io/static/v1?label=GEdit-Bench&message=HuggingFace&color=yellow"></a> &ensp;

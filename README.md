@@ -17,6 +17,7 @@
 
 
 ## 🔥🔥🔥 News!!
+* Dec 29, 2025: 🎉 [RegionE](https://github.com/Peyton-Chen/RegionE) delivers a 2.5× speedup for Step1X-Edit inference with no accuracy degradation, achieved with just five lines of code.
 * Nov 26, 2025: 👋 We release [Step1X-Edit-v1p2](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2) (referred to as **ReasonEdit-S** in the paper), a native reasoning edit model with better performance on KRIS-Bench and GEdit-Bench. Technical report can be found [here](https://arxiv.org/abs/2511.22625).
   <table>
   <thead>
@@ -121,14 +122,24 @@ Install the `diffusers` package from the following command:
 git clone -b step1xedit_v1p2 https://github.com/Peyton-Chen/diffusers.git
 cd diffusers
 pip install -e .
+
+pip install RegionE # optional, for faster inference
 ```
 Here is an example for using the `Step1X-Edit-v1p2` model to edit images:
 ```python
 import torch
 from diffusers import Step1XEditPipelineV1P2
 from diffusers.utils import load_image
+from RegionE import RegionEHelper
+
 pipe = Step1XEditPipelineV1P2.from_pretrained("stepfun-ai/Step1X-Edit-v1p2", torch_dtype=torch.bfloat16)
 pipe.to("cuda")
+
+# Import the RegionEHelper
+regionehelper = RegionEHelper(pipe)
+regionehelper.set_params()   # default hyperparameter
+regionehelper.enable()
+
 print("=== processing image ===")
 image = load_image("examples/0000.jpg").convert("RGB")
 prompt = "add a ruby pendant on the girl's neck."
@@ -151,6 +162,8 @@ for image_idx in range(len(pipe_output.images)):
         print(pipe_output.think_info[image_idx])
         print(pipe_output.best_info[image_idx])
 pipe_output.final_images[0].save(f"0001-final.jpg", lossless=True)
+
+regionehelper.disable()
 ```
 The results looks like:
 <div align="center">

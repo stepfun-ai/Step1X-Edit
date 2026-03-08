@@ -5,3 +5,11 @@ __pycache__
 */__pycache__/
 test*
 tmp_*
+training_data/source_img
+training_data/reference_img
+training_data/target_img
+training_data/reference_img/left
+training_data/reference_img/right
+training_6k/source_img
+training_6k/reference_img
+training_6k/target_img

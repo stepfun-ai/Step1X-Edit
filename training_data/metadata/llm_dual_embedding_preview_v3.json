@@ -1,0 +1,16 @@
+{
+  "img1_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0000_pair00_s0__source.png",
+  "img2_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/reference_img/left/data__p0000_pair00_s0.png",
+  "fixed_prompt": "You are analyzing facial expressions for a controlled editing task.\nGiven:\n- Image 1: source face to be edited\n- Image 2: target expression reference\n\nDescribe only the target facial-expression edit.\nFocus only on expression change.\nKeep identity, hairstyle, clothing, background, lighting, and camera unchanged.",
+  "fixed_metadata_caption": "edit facial expression",
+  "decoded_text": "The target facial-expression edit involves changing the expression from a neutral or slightly serious look in Image 1 to a broad, genuine smile as seen in Image 2. The eyes should be open wider, the mouth should be open to reveal teeth, and the overall facial muscles should relax and convey happiness and friendliness. The rest of the image, including the hairstyle, clothing, background, lighting, and camera angle, should remain unchanged.",
+  "embedding_shape": [
+    1280,
+    3584
+  ],
+  "mask_sum": 70,
+  "full_seq_len": 731,
+  "text_start_index": 661,
+  "usable_len_before_truncation": 70,
+  "final_len": 70
+}

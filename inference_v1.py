@@ -139,17 +139,9 @@ def load_models(
 def equip_dit_with_lora_sd_scripts(ae, text_encoders, dit, lora, device='cuda'):
     from safetensors.torch import load_file
     weights_sd = load_file(lora)
-    keys = list(weights_sd.keys())
-    is_lora = any(("lora_down" in k or "lora_up" in k or k.startswith("lora_")) for k in keys)
-    is_connector = any(k.startswith("connector.") for k in keys) or not is_lora
-
-    if is_lora and not is_connector:
-        from library import lora_module as module
-        print(f"[Adapter loader] Detected LoRA weights: {lora}")
-    else:
-        from library import connector_module as module
-        print(f"[Adapter loader] Detected connector weights: {lora}")
-
+    is_lora = True
+    from library import lora_module
+    module = lora_module
     lora_model, _ = module.create_network_from_weights(1.0, None, ae, text_encoders, dit, weights_sd, True)
     lora_model.merge_to(text_encoders, dit, weights_sd)
 
@@ -163,7 +155,7 @@ class ImageGenerator:
         ae_path=None,
         qwen2vl_model_path=None,
         device="cuda",
-        max_length=640,
+        max_length=1280,
         dtype=torch.bfloat16,
         quantized=False,
         offload=False,
@@ -720,7 +712,7 @@ def main():
         ae_path=os.path.join(args.model_path, 'vae.safetensors'),
         dit_path=os.path.join(args.model_path, ckpt_name),
         qwen2vl_model_path=os.path.join(args.model_path, 'Qwen2.5-VL-7B-Instruct'),
-        max_length=640,
+        max_length=1280,
         quantized=args.quantized,
         offload=args.offload,
         lora=args.lora,

@@ -71,7 +71,7 @@ def load_models(
 def load_qwen2p5vl(
     qwen2vl_model_path=None,
     device="cuda",
-    max_length=1280,
+    max_length=640,
     dtype=torch.bfloat16,
 ):
     qwen2vl_encoder = Qwen2VLEmbedder(

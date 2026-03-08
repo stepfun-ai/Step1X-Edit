@@ -1,0 +1,18 @@
+# Config A: neg→pos (original)
+# Training target (latents): source_img/  KEY = XXX__source.png
+# Reference (ref_latents):   reference_img/left/  XXX.png
+# Caption: positive expression
+
+[general]
+shuffle_caption = false
+caption_extension = ".txt"
+keep_tokens = 1
+
+[[datasets]]
+resolution = [768, 768]
+batch_size = 1
+edit_dataset = true
+
+  [[datasets.subsets]]
+  image_dir = "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img"
+  metadata_file = "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/configs/metadata_A_neg2pos.json"

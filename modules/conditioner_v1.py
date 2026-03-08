@@ -63,7 +63,7 @@ def split_string(s):
     return result
 
 class Qwen25VL_7b_Embedder(torch.nn.Module):
-    def __init__(self, model_path, max_length=1280, dtype=torch.bfloat16, device='cuda'):
+    def __init__(self, model_path, max_length=640, dtype=torch.bfloat16, device='cuda'):
         super(Qwen25VL_7b_Embedder, self).__init__()
         self.max_length = max_length
         self.dtype = dtype
@@ -200,7 +200,7 @@ User Prompt:'''
 
 
 class Qwen25VL_7b_Embedder_backup(torch.nn.Module):
-    def __init__(self, model_path, max_length=1280, dtype=torch.bfloat16, device="cuda"):
+    def __init__(self, model_path, max_length=640, dtype=torch.bfloat16, device="cuda"):
         super(Qwen25VL_7b_Embedder_backup, self).__init__()
         self.max_length = max_length
 

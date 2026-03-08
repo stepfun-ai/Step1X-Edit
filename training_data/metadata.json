@@ -1,0 +1,1206 @@
+{
+  "data__p0000_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep his clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0000_pair00_s0__source.png"
+  },
+  "data__p0000_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0000_pair01_s0__source.png"
+  },
+  "data__p0000_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0000_pair02_s0__source.png"
+  },
+  "data__p0000_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0000_pair03_s0__source.png"
+  },
+  "data__p0000_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0000_pair04_s0__source.png"
+  },
+  "data__p0001_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0001_pair00_s0__source.png"
+  },
+  "data__p0001_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0001_pair01_s0__source.png"
+  },
+  "data__p0001_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0001_pair02_s0__source.png"
+  },
+  "data__p0001_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0001_pair03_s0__source.png"
+  },
+  "data__p0001_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0001_pair04_s0__source.png"
+  },
+  "data__p0002_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0002_pair00_s0__source.png"
+  },
+  "data__p0002_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0002_pair01_s0__source.png"
+  },
+  "data__p0002_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0002_pair02_s0__source.png"
+  },
+  "data__p0002_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0002_pair03_s0__source.png"
+  },
+  "data__p0002_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0002_pair04_s0__source.png"
+  },
+  "data__p0003_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0003_pair00_s0__source.png"
+  },
+  "data__p0003_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0003_pair01_s0__source.png"
+  },
+  "data__p0003_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0003_pair02_s0__source.png"
+  },
+  "data__p0003_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0003_pair03_s0__source.png"
+  },
+  "data__p0003_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0003_pair04_s0__source.png"
+  },
+  "data__p0004_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0004_pair00_s0__source.png"
+  },
+  "data__p0004_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0004_pair01_s0__source.png"
+  },
+  "data__p0004_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0004_pair02_s0__source.png"
+  },
+  "data__p0004_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0004_pair03_s0__source.png"
+  },
+  "data__p0004_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0004_pair04_s0__source.png"
+  },
+  "data__p0005_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0005_pair00_s0__source.png"
+  },
+  "data__p0005_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0005_pair01_s0__source.png"
+  },
+  "data__p0005_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0005_pair02_s0__source.png"
+  },
+  "data__p0005_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0005_pair03_s0__source.png"
+  },
+  "data__p0005_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0005_pair04_s0__source.png"
+  },
+  "data__p0006_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0006_pair00_s0__source.png"
+  },
+  "data__p0006_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0006_pair01_s0__source.png"
+  },
+  "data__p0006_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0006_pair02_s0__source.png"
+  },
+  "data__p0006_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0006_pair03_s0__source.png"
+  },
+  "data__p0006_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0006_pair04_s0__source.png"
+  },
+  "data__p0007_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0007_pair00_s0__source.png"
+  },
+  "data__p0007_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0007_pair01_s0__source.png"
+  },
+  "data__p0007_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0007_pair02_s0__source.png"
+  },
+  "data__p0007_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0007_pair03_s0__source.png"
+  },
+  "data__p0007_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0007_pair04_s0__source.png"
+  },
+  "data__p0008_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0008_pair00_s0__source.png"
+  },
+  "data__p0008_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0008_pair01_s0__source.png"
+  },
+  "data__p0008_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0008_pair02_s0__source.png"
+  },
+  "data__p0008_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0008_pair03_s0__source.png"
+  },
+  "data__p0008_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0008_pair04_s0__source.png"
+  },
+  "data__p0009_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0009_pair00_s0__source.png"
+  },
+  "data__p0009_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0009_pair01_s0__source.png"
+  },
+  "data__p0009_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0009_pair02_s0__source.png"
+  },
+  "data__p0009_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0009_pair03_s0__source.png"
+  },
+  "data__p0009_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0009_pair04_s0__source.png"
+  },
+  "data__p0010_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0010_pair00_s0__source.png"
+  },
+  "data__p0010_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0010_pair01_s0__source.png"
+  },
+  "data__p0010_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0010_pair02_s0__source.png"
+  },
+  "data__p0010_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0010_pair03_s0__source.png"
+  },
+  "data__p0010_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0010_pair04_s0__source.png"
+  },
+  "data__p0011_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0011_pair00_s0__source.png"
+  },
+  "data__p0011_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0011_pair01_s0__source.png"
+  },
+  "data__p0011_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0011_pair02_s0__source.png"
+  },
+  "data__p0011_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0011_pair03_s0__source.png"
+  },
+  "data__p0011_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0011_pair04_s0__source.png"
+  },
+  "data__p0012_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0012_pair00_s0__source.png"
+  },
+  "data__p0012_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0012_pair01_s0__source.png"
+  },
+  "data__p0012_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0012_pair02_s0__source.png"
+  },
+  "data__p0012_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0012_pair03_s0__source.png"
+  },
+  "data__p0012_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0012_pair04_s0__source.png"
+  },
+  "data__p0013_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0013_pair00_s0__source.png"
+  },
+  "data__p0013_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0013_pair01_s0__source.png"
+  },
+  "data__p0013_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0013_pair02_s0__source.png"
+  },
+  "data__p0013_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0013_pair03_s0__source.png"
+  },
+  "data__p0013_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0013_pair04_s0__source.png"
+  },
+  "data__p0014_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0014_pair00_s0__source.png"
+  },
+  "data__p0014_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0014_pair01_s0__source.png"
+  },
+  "data__p0014_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0014_pair02_s0__source.png"
+  },
+  "data__p0014_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0014_pair03_s0__source.png"
+  },
+  "data__p0014_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0014_pair04_s0__source.png"
+  },
+  "data__p0015_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0015_pair00_s0__source.png"
+  },
+  "data__p0015_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0015_pair01_s0__source.png"
+  },
+  "data__p0015_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0015_pair02_s0__source.png"
+  },
+  "data__p0015_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0015_pair03_s0__source.png"
+  },
+  "data__p0015_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0015_pair04_s0__source.png"
+  },
+  "data__p0016_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0016_pair00_s0__source.png"
+  },
+  "data__p0016_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0016_pair01_s0__source.png"
+  },
+  "data__p0016_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0016_pair02_s0__source.png"
+  },
+  "data__p0016_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0016_pair03_s0__source.png"
+  },
+  "data__p0016_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0016_pair04_s0__source.png"
+  },
+  "data__p0017_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0017_pair00_s0__source.png"
+  },
+  "data__p0017_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0017_pair01_s0__source.png"
+  },
+  "data__p0017_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0017_pair02_s0__source.png"
+  },
+  "data__p0017_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0017_pair03_s0__source.png"
+  },
+  "data__p0017_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0017_pair04_s0__source.png"
+  },
+  "data__p0018_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0018_pair00_s0__source.png"
+  },
+  "data__p0018_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0018_pair01_s0__source.png"
+  },
+  "data__p0018_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0018_pair02_s0__source.png"
+  },
+  "data__p0018_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0018_pair03_s0__source.png"
+  },
+  "data__p0018_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0018_pair04_s0__source.png"
+  },
+  "data__p0019_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0019_pair00_s0__source.png"
+  },
+  "data__p0019_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0019_pair01_s0__source.png"
+  },
+  "data__p0019_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0019_pair02_s0__source.png"
+  },
+  "data__p0019_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0019_pair03_s0__source.png"
+  },
+  "data__p0019_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0019_pair04_s0__source.png"
+  },
+  "data__p0020_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0020_pair00_s0__source.png"
+  },
+  "data__p0020_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0020_pair01_s0__source.png"
+  },
+  "data__p0020_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0020_pair02_s0__source.png"
+  },
+  "data__p0020_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0020_pair03_s0__source.png"
+  },
+  "data__p0020_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0020_pair04_s0__source.png"
+  },
+  "data__p0021_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0021_pair00_s0__source.png"
+  },
+  "data__p0021_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0021_pair01_s0__source.png"
+  },
+  "data__p0021_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0021_pair02_s0__source.png"
+  },
+  "data__p0021_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0021_pair03_s0__source.png"
+  },
+  "data__p0021_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0021_pair04_s0__source.png"
+  },
+  "data__p0022_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0022_pair00_s0__source.png"
+  },
+  "data__p0022_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0022_pair01_s0__source.png"
+  },
+  "data__p0022_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0022_pair02_s0__source.png"
+  },
+  "data__p0022_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0022_pair03_s0__source.png"
+  },
+  "data__p0022_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0022_pair04_s0__source.png"
+  },
+  "data__p0023_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0023_pair00_s0__source.png"
+  },
+  "data__p0023_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0023_pair01_s0__source.png"
+  },
+  "data__p0023_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0023_pair02_s0__source.png"
+  },
+  "data__p0023_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0023_pair03_s0__source.png"
+  },
+  "data__p0023_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0023_pair04_s0__source.png"
+  },
+  "data__p0024_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0024_pair00_s0__source.png"
+  },
+  "data__p0024_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0024_pair01_s0__source.png"
+  },
+  "data__p0024_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0024_pair02_s0__source.png"
+  },
+  "data__p0024_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0024_pair03_s0__source.png"
+  },
+  "data__p0024_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0024_pair04_s0__source.png"
+  },
+  "data__p0025_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0025_pair00_s0__source.png"
+  },
+  "data__p0025_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0025_pair01_s0__source.png"
+  },
+  "data__p0025_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0025_pair02_s0__source.png"
+  },
+  "data__p0025_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0025_pair03_s0__source.png"
+  },
+  "data__p0025_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0025_pair04_s0__source.png"
+  },
+  "data__p0026_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0026_pair00_s0__source.png"
+  },
+  "data__p0026_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0026_pair01_s0__source.png"
+  },
+  "data__p0026_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0026_pair02_s0__source.png"
+  },
+  "data__p0026_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0026_pair03_s0__source.png"
+  },
+  "data__p0026_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0026_pair04_s0__source.png"
+  },
+  "data__p0027_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0027_pair00_s0__source.png"
+  },
+  "data__p0027_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0027_pair01_s0__source.png"
+  },
+  "data__p0027_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0027_pair02_s0__source.png"
+  },
+  "data__p0027_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0027_pair03_s0__source.png"
+  },
+  "data__p0027_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0027_pair04_s0__source.png"
+  },
+  "data__p0028_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0028_pair00_s0__source.png"
+  },
+  "data__p0028_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0028_pair01_s0__source.png"
+  },
+  "data__p0028_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0028_pair02_s0__source.png"
+  },
+  "data__p0028_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0028_pair03_s0__source.png"
+  },
+  "data__p0028_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0028_pair04_s0__source.png"
+  },
+  "data__p0029_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0029_pair00_s0__source.png"
+  },
+  "data__p0029_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0029_pair01_s0__source.png"
+  },
+  "data__p0029_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0029_pair02_s0__source.png"
+  },
+  "data__p0029_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0029_pair03_s0__source.png"
+  },
+  "data__p0029_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0029_pair04_s0__source.png"
+  },
+  "data__p0030_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0030_pair00_s0__source.png"
+  },
+  "data__p0030_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0030_pair01_s0__source.png"
+  },
+  "data__p0030_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0030_pair02_s0__source.png"
+  },
+  "data__p0030_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0030_pair03_s0__source.png"
+  },
+  "data__p0030_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0030_pair04_s0__source.png"
+  },
+  "data__p0031_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0031_pair00_s0__source.png"
+  },
+  "data__p0031_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0031_pair01_s0__source.png"
+  },
+  "data__p0031_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0031_pair02_s0__source.png"
+  },
+  "data__p0031_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0031_pair03_s0__source.png"
+  },
+  "data__p0031_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0031_pair04_s0__source.png"
+  },
+  "data__p0032_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0032_pair00_s0__source.png"
+  },
+  "data__p0032_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0032_pair01_s0__source.png"
+  },
+  "data__p0032_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0032_pair02_s0__source.png"
+  },
+  "data__p0032_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0032_pair03_s0__source.png"
+  },
+  "data__p0032_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0032_pair04_s0__source.png"
+  },
+  "data__p0033_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0033_pair00_s0__source.png"
+  },
+  "data__p0033_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0033_pair01_s0__source.png"
+  },
+  "data__p0033_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0033_pair02_s0__source.png"
+  },
+  "data__p0033_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0033_pair03_s0__source.png"
+  },
+  "data__p0033_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0033_pair04_s0__source.png"
+  },
+  "data__p0034_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0034_pair00_s0__source.png"
+  },
+  "data__p0034_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0034_pair01_s0__source.png"
+  },
+  "data__p0034_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0034_pair02_s0__source.png"
+  },
+  "data__p0034_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0034_pair03_s0__source.png"
+  },
+  "data__p0034_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0034_pair04_s0__source.png"
+  },
+  "data__p0035_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0035_pair00_s0__source.png"
+  },
+  "data__p0035_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0035_pair01_s0__source.png"
+  },
+  "data__p0035_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0035_pair02_s0__source.png"
+  },
+  "data__p0035_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0035_pair03_s0__source.png"
+  },
+  "data__p0035_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0035_pair04_s0__source.png"
+  },
+  "data__p0036_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0036_pair00_s0__source.png"
+  },
+  "data__p0036_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0036_pair01_s0__source.png"
+  },
+  "data__p0036_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0036_pair02_s0__source.png"
+  },
+  "data__p0036_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0036_pair03_s0__source.png"
+  },
+  "data__p0036_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0036_pair04_s0__source.png"
+  },
+  "data__p0037_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0037_pair00_s0__source.png"
+  },
+  "data__p0037_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0037_pair01_s0__source.png"
+  },
+  "data__p0037_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0037_pair02_s0__source.png"
+  },
+  "data__p0037_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0037_pair03_s0__source.png"
+  },
+  "data__p0037_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0037_pair04_s0__source.png"
+  },
+  "data__p0038_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0038_pair00_s0__source.png"
+  },
+  "data__p0038_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0038_pair01_s0__source.png"
+  },
+  "data__p0038_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0038_pair02_s0__source.png"
+  },
+  "data__p0038_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0038_pair03_s0__source.png"
+  },
+  "data__p0038_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0038_pair04_s0__source.png"
+  },
+  "data__p0039_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0039_pair00_s0__source.png"
+  },
+  "data__p0039_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0039_pair01_s0__source.png"
+  },
+  "data__p0039_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0039_pair02_s0__source.png"
+  },
+  "data__p0039_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0039_pair03_s0__source.png"
+  },
+  "data__p0039_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0039_pair04_s0__source.png"
+  },
+  "data__p0040_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0040_pair00_s0__source.png"
+  },
+  "data__p0040_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0040_pair01_s0__source.png"
+  },
+  "data__p0040_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0040_pair02_s0__source.png"
+  },
+  "data__p0040_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0040_pair03_s0__source.png"
+  },
+  "data__p0040_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0040_pair04_s0__source.png"
+  },
+  "data__p0041_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0041_pair00_s0__source.png"
+  },
+  "data__p0041_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0041_pair01_s0__source.png"
+  },
+  "data__p0041_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0041_pair02_s0__source.png"
+  },
+  "data__p0041_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0041_pair03_s0__source.png"
+  },
+  "data__p0041_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0041_pair04_s0__source.png"
+  },
+  "data__p0042_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0042_pair00_s0__source.png"
+  },
+  "data__p0042_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0042_pair01_s0__source.png"
+  },
+  "data__p0042_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0042_pair02_s0__source.png"
+  },
+  "data__p0042_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0042_pair03_s0__source.png"
+  },
+  "data__p0042_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0042_pair04_s0__source.png"
+  },
+  "data__p0043_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0043_pair00_s0__source.png"
+  },
+  "data__p0043_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0043_pair01_s0__source.png"
+  },
+  "data__p0043_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0043_pair02_s0__source.png"
+  },
+  "data__p0043_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0043_pair03_s0__source.png"
+  },
+  "data__p0043_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0043_pair04_s0__source.png"
+  },
+  "data__p0044_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0044_pair00_s0__source.png"
+  },
+  "data__p0044_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0044_pair01_s0__source.png"
+  },
+  "data__p0044_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0044_pair02_s0__source.png"
+  },
+  "data__p0044_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0044_pair03_s0__source.png"
+  },
+  "data__p0044_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0044_pair04_s0__source.png"
+  },
+  "data__p0045_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0045_pair00_s0__source.png"
+  },
+  "data__p0045_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0045_pair01_s0__source.png"
+  },
+  "data__p0045_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0045_pair02_s0__source.png"
+  },
+  "data__p0045_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0045_pair03_s0__source.png"
+  },
+  "data__p0045_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0045_pair04_s0__source.png"
+  },
+  "data__p0046_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0046_pair00_s0__source.png"
+  },
+  "data__p0046_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0046_pair01_s0__source.png"
+  },
+  "data__p0046_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0046_pair02_s0__source.png"
+  },
+  "data__p0046_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0046_pair03_s0__source.png"
+  },
+  "data__p0046_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0046_pair04_s0__source.png"
+  },
+  "data__p0047_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0047_pair00_s0__source.png"
+  },
+  "data__p0047_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0047_pair01_s0__source.png"
+  },
+  "data__p0047_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0047_pair02_s0__source.png"
+  },
+  "data__p0047_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0047_pair03_s0__source.png"
+  },
+  "data__p0047_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0047_pair04_s0__source.png"
+  },
+  "data__p0048_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0048_pair00_s0__source.png"
+  },
+  "data__p0048_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0048_pair01_s0__source.png"
+  },
+  "data__p0048_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0048_pair02_s0__source.png"
+  },
+  "data__p0048_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0048_pair03_s0__source.png"
+  },
+  "data__p0048_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0048_pair04_s0__source.png"
+  },
+  "data__p0049_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0049_pair00_s0__source.png"
+  },
+  "data__p0049_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0049_pair01_s0__source.png"
+  },
+  "data__p0049_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0049_pair02_s0__source.png"
+  },
+  "data__p0049_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0049_pair03_s0__source.png"
+  },
+  "data__p0049_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0049_pair04_s0__source.png"
+  },
+  "data__p0050_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0050_pair00_s0__source.png"
+  },
+  "data__p0050_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0050_pair01_s0__source.png"
+  },
+  "data__p0050_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0050_pair02_s0__source.png"
+  },
+  "data__p0050_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0050_pair03_s0__source.png"
+  },
+  "data__p0050_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0050_pair04_s0__source.png"
+  },
+  "data__p0051_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0051_pair00_s0__source.png"
+  },
+  "data__p0051_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0051_pair01_s0__source.png"
+  },
+  "data__p0051_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0051_pair02_s0__source.png"
+  },
+  "data__p0051_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0051_pair03_s0__source.png"
+  },
+  "data__p0051_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0051_pair04_s0__source.png"
+  },
+  "data__p0052_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0052_pair00_s0__source.png"
+  },
+  "data__p0052_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0052_pair01_s0__source.png"
+  },
+  "data__p0052_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0052_pair02_s0__source.png"
+  },
+  "data__p0052_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0052_pair03_s0__source.png"
+  },
+  "data__p0052_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0052_pair04_s0__source.png"
+  },
+  "data__p0053_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0053_pair00_s0__source.png"
+  },
+  "data__p0053_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0053_pair01_s0__source.png"
+  },
+  "data__p0053_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0053_pair02_s0__source.png"
+  },
+  "data__p0053_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0053_pair03_s0__source.png"
+  },
+  "data__p0053_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0053_pair04_s0__source.png"
+  },
+  "data__p0054_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0054_pair00_s0__source.png"
+  },
+  "data__p0054_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0054_pair01_s0__source.png"
+  },
+  "data__p0054_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0054_pair02_s0__source.png"
+  },
+  "data__p0054_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0054_pair03_s0__source.png"
+  },
+  "data__p0054_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0054_pair04_s0__source.png"
+  },
+  "data__p0055_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0055_pair00_s0__source.png"
+  },
+  "data__p0055_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0055_pair01_s0__source.png"
+  },
+  "data__p0055_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0055_pair02_s0__source.png"
+  },
+  "data__p0055_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0055_pair03_s0__source.png"
+  },
+  "data__p0055_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0055_pair04_s0__source.png"
+  },
+  "data__p0056_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0056_pair00_s0__source.png"
+  },
+  "data__p0056_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0056_pair01_s0__source.png"
+  },
+  "data__p0056_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0056_pair02_s0__source.png"
+  },
+  "data__p0056_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0056_pair03_s0__source.png"
+  },
+  "data__p0056_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0056_pair04_s0__source.png"
+  },
+  "data__p0057_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0057_pair00_s0__source.png"
+  },
+  "data__p0057_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0057_pair01_s0__source.png"
+  },
+  "data__p0057_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0057_pair02_s0__source.png"
+  },
+  "data__p0057_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0057_pair03_s0__source.png"
+  },
+  "data__p0057_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0057_pair04_s0__source.png"
+  },
+  "data__p0058_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0058_pair00_s0__source.png"
+  },
+  "data__p0058_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0058_pair01_s0__source.png"
+  },
+  "data__p0058_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0058_pair02_s0__source.png"
+  },
+  "data__p0058_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0058_pair03_s0__source.png"
+  },
+  "data__p0058_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0058_pair04_s0__source.png"
+  },
+  "data__p0059_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0059_pair00_s0__source.png"
+  },
+  "data__p0059_pair01_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0059_pair01_s0__source.png"
+  },
+  "data__p0059_pair02_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0059_pair02_s0__source.png"
+  },
+  "data__p0059_pair03_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0059_pair03_s0__source.png"
+  },
+  "data__p0059_pair04_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0059_pair04_s0__source.png"
+  },
+  "data__p0060_pair00_s0__target.png": {
+    "caption": "Make the person smile warmly and keep the clothes, identity, background same",
+    "ref_image_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0060_pair00_s0__source.png"
+  }
+}

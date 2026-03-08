@@ -10,5 +10,5 @@ batch_size = 1
 edit_dataset = true # necessary for editing tasks
 
   [[datasets.subsets]]
-  image_dir = <path to image_dir>
-  metadata_file = <path to your metadata_file>
+  image_dir = "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/target_img"
+  metadata_file = "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/metadata.json"

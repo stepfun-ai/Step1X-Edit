@@ -17,6 +17,12 @@
 
 
 ## 🔥🔥🔥 News!!
+* Apr 29, 2026: 🎉 Step Image Edit 2 is now live — a lightweight model designed for ultra-fast response and high-quality output, delivering a real-time interactive creation experience. It can complete image generation and editing tasks within 2 seconds. Feel free to try it out and share your feedback ✨✨✨
+
+  Try it here (StepFun Open Platform): [https://platform.stepfun.com/docs/zh/guides/models/step-image-edit-2](https://platform.stepfun.com/docs/zh/guides/models/step-image-edit-2)
+
+  API documentation: [https://platform.stepfun.com/docs/zh/step-plan/integrations/image-api](https://platform.stepfun.com/docs/zh/step-plan/integrations/image-api)
+
 * Dec 29, 2025: 🎉 [RegionE](https://github.com/Peyton-Chen/RegionE) delivers a 2.5× speedup for Step1X-Edit inference with no accuracy degradation, achieved with just five lines of code.
 * Nov 26, 2025: 👋 We release [Step1X-Edit-v1p2](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2) (referred to as **ReasonEdit-S** in the paper), a native reasoning edit model with better performance on KRIS-Bench and GEdit-Bench. Technical report can be found [here](https://arxiv.org/abs/2511.22625).
   <table>

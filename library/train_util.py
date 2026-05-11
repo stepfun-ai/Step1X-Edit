@@ -2080,10 +2080,15 @@ class FineTuningDataset(BaseDataset):
                 if os.path.exists(image_key):
                     abs_path = image_key
                 else:
-                    # わりといい加減だがいい方法が思いつかん
-                    paths = glob_images(subset.image_dir, image_key)
-                    if len(paths) > 0:
-                        abs_path = paths[0]
+                    # try direct join with image_dir (handles keys with extension)
+                    direct_path = os.path.join(subset.image_dir, image_key)
+                    if os.path.exists(direct_path):
+                        abs_path = direct_path
+                    else:
+                        # わりといい加減だがいい方法が思いつかん
+                        paths = glob_images(subset.image_dir, os.path.splitext(image_key)[0])
+                        if len(paths) > 0:
+                            abs_path = paths[0]
 
                 # なければnpzを探す
                 if abs_path is None:
@@ -2310,10 +2315,15 @@ class EditDataset(BaseDataset):
                 if os.path.exists(image_key):
                     abs_path = image_key
                 else:
-                    # わりといい加減だがいい方法が思いつかん
-                    paths = glob_images(subset.image_dir, image_key)
-                    if len(paths) > 0:
-                        abs_path = paths[0]
+                    # try direct join with image_dir (handles keys with extension)
+                    direct_path = os.path.join(subset.image_dir, image_key)
+                    if os.path.exists(direct_path):
+                        abs_path = direct_path
+                    else:
+                        # わりといい加減だがいい方法が思いつかん
+                        paths = glob_images(subset.image_dir, os.path.splitext(image_key)[0])
+                        if len(paths) > 0:
+                            abs_path = paths[0]
 
                 # なければnpzを探す
                 if abs_path is None:

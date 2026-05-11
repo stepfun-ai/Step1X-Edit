@@ -825,7 +825,9 @@ class NetworkTrainer:
             t_enc.requires_grad_(False)
 
             # in case of cpu, dtype is already set to fp32 because cpu does not support fp8/fp16/bf16
-            if t_enc.device.type != "cpu":
+            t_enc_device = t_enc.device
+            t_enc_device_type = t_enc_device.type if hasattr(t_enc_device, "type") else str(t_enc_device)
+            if t_enc_device_type != "cpu":
                 t_enc.to(dtype=te_weight_dtype)
 
                 # nn.Embedding not support FP8

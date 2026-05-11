@@ -56,7 +56,7 @@ def split_string(s):
     return result
 
 class Step1xEditTokenizeStrategy(TokenizeStrategy):
-    def __init__(self, max_length: int = 1280, tokenizer_cache_dir: Optional[str] = None) -> None:
+    def __init__(self, max_length: int = 640, tokenizer_cache_dir: Optional[str] = None) -> None:
         self.max_length = max_length 
         self.processor = AutoProcessor.from_pretrained(
             tokenizer_cache_dir, min_pixels=256 * 28 * 28, max_pixels=324 * 28 * 28
@@ -130,7 +130,7 @@ class Step1xEditTokenizeStrategy(TokenizeStrategy):
         return res_list
 
 class Step1XEditEncodingStrategy(TextEncodingStrategy):
-    def __init__(self, max_length=1280, hidden_size=None) -> None:
+    def __init__(self, max_length=640, hidden_size=None) -> None:
         self.max_length = max_length
         self.hidden_size=hidden_size
         self.dtype = None

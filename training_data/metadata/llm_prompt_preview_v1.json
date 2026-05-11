@@ -1,0 +1,10 @@
+{
+  "img1_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/source_img/data__p0000_pair00_s0__source.png",
+  "img2_path": "/scratch3/f007yzf/repos/Step1X-Edit-clean/training_data/reference_img/left/data__p0000_pair00_s0.png",
+  "prompt": "To transform the source image into the desired expression, we need to focus on adjusting the facial features and overall expression. Here is a structured editing plan:\n\n### Step-by-Step Editing Plan:\n\n#### 1. **Facial Expression Adjustment**\n   - **Eyebrows**: Lower the eyebrows slightly to create a more relaxed and friendly look.\n   - **Eyes**: Open the eyes wider to convey a brighter and more cheerful expression.\n   - **Mouth**: Increase the size of the mouth and adjust the corners upwards to form a smile.\n\n#### 2. **Lighting and Shadows**\n   - **Lighting**: Enhance the lighting to make the face appear brighter and more vibrant. Focus on illuminating the face evenly without harsh shadows.",
+  "embedding_shape": [
+    640,
+    3584
+  ],
+  "mask_sum": 463
+}

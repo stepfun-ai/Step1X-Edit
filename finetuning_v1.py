@@ -143,7 +143,7 @@ class Step1XEditNetworkTrainer(kohya_trainer.NetworkTrainer):
         """
         获取分词策略。
         """
-        return strategy_step1x.Step1xEditTokenizeStrategy(max_length=1280, tokenizer_cache_dir=args.qwen2p5vl)
+        return strategy_step1x.Step1xEditTokenizeStrategy(tokenizer_cache_dir=args.qwen2p5vl)
 
     def get_tokenizers(self, tokenize_strategy):
         return [tokenize_strategy.processor]
@@ -157,7 +157,7 @@ class Step1XEditNetworkTrainer(kohya_trainer.NetworkTrainer):
         return latents_caching_strategy
 
     def get_text_encoding_strategy(self, args):
-        return strategy_step1x.Step1XEditEncodingStrategy(max_length=1280)
+        return strategy_step1x.Step1XEditEncodingStrategy()
 
     def post_process_network(self, args, accelerator, network, text_encoders, unet):
         pass 
